@@ -8,17 +8,19 @@ export interface ArgumentCardProps {
 }
 export const ArgumentCard = (props: ArgumentCardProps) => {
   return (
-    <div className="flex-col max-w-96 max-h-96 min-w-72 shadow-md p-4 gap-2">
+    <div className="flex-col max-w-96 max-h-96 min-w-72 shadow-md p-4 gap-2 rounded border">
       <div className="flex gap-2 items-center pb-3">
         <div className="bg-slate-500 rounded-full h-10 w-10 justify-center items-center flex">
           <AccessTimeIcon style={{ color: "white" }} />
         </div>
-        <h1 className="font-bold">Titolo</h1>
+        <h1 className="font-bold">{props.title}</h1>
       </div>
-      {props.links.map((l) => (
-        <Link key={l.title} href={l.path}>
-          {l.title}
-        </Link>
+      {props.links.map((l, i: number) => (
+        <div key={i}>
+          <Link key={l.title} href={`${l.path}/${l.section}`}>
+            {l.title}
+          </Link>
+        </div>
       ))}
     </div>
   );

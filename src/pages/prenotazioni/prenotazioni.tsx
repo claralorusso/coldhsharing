@@ -12,8 +12,26 @@ import {
 import AddIcon from "@mui/icons-material/Add";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import SettingsIcon from "@mui/icons-material/Settings";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 export const Prenotazioni = () => {
+  const { section } = useParams();
+  const [expanded, setExpanded] = useState("");
+
+  useEffect(() => {
+    if (section) {
+      setExpanded(section);
+    } else {
+      setExpanded("");
+    }
+  }, [section]);
+
+  const handleChange =
+    (panel: string) => (_: React.SyntheticEvent, isExpanded: boolean) => {
+      setExpanded(isExpanded ? panel : "");
+    };
+
   return (
     <div className="h-full w-full p-4">
       <h1 className="text-xl font-bold pb-1">Prenotazioni</h1>
@@ -22,7 +40,10 @@ export const Prenotazioni = () => {
         richieste di prenotazioni.{" "}
       </div>
       <div>
-        <Accordion>
+        <Accordion
+          expanded={expanded === "manage-booking"}
+          onChange={handleChange("manage-booking")}
+        >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1-content"
@@ -284,7 +305,10 @@ export const Prenotazioni = () => {
             </Alert>
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion
+          expanded={expanded === "manage-limit"}
+          onChange={handleChange("manage-limit")}
+        >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel2-content"
@@ -591,7 +615,10 @@ export const Prenotazioni = () => {
             </div>
           </AccordionDetails>
         </Accordion>
-        <Accordion defaultExpanded>
+        <Accordion
+          expanded={expanded === "manage-edit"}
+          onChange={handleChange("manage-edit")}
+        >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel3-content"
@@ -716,7 +743,10 @@ export const Prenotazioni = () => {
             </div>
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion
+          expanded={expanded === "manage-customers"}
+          onChange={handleChange("manage-customers")}
+        >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1-content"

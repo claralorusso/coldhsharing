@@ -1,2 +1,2 @@
-export * from "./prenotazioni";
+export * from "./prenotazioni/prenotazioni";
 export * from "./home";

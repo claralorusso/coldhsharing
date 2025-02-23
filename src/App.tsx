@@ -13,7 +13,11 @@ function App() {
           <Route path="/" element={<Home />} />
           {listArguments.map((item) =>
             item.links.map((l) => (
-              <Route key={l.title} path={l.path} element={l.element} />
+              <Route
+                key={l.title}
+                path={`${l.path}/:section`}
+                element={l.element}
+              />
             ))
           )}
         </Routes>

@@ -6,7 +6,7 @@ export const Topbar = () => {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Home
+            Coldsharing - Help
           </Typography>
         </Toolbar>
       </AppBar>
