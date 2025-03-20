@@ -1,34 +1,19 @@
-import {
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  Alert,
-  AlertTitle,
-} from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
-
 export const Fatturazioni = () => {
-  const { section } = useParams();
-  const [expanded, setExpanded] = useState("");
+  // const { section } = useParams();
+  // const [expanded, setExpanded] = useState("");
 
-  useEffect(() => {
-    if (section) {
-      setExpanded(section);
-    } else {
-      setExpanded("");
-    }
-  }, [section]);
+  // useEffect(() => {
+  //   if (section) {
+  //     setExpanded(section);
+  //   } else {
+  //     setExpanded("");
+  //   }
+  // }, [section]);
 
-  const handleChange =
-    (panel: string) => (_: React.SyntheticEvent, isExpanded: boolean) => {
-      setExpanded(isExpanded ? panel : "");
-    };
+  // const handleChange =
+  //   (panel: string) => (_: React.SyntheticEvent, isExpanded: boolean) => {
+  //     setExpanded(isExpanded ? panel : "");
+  //   };
 
   return (
     <div className="h-full w-full p-4">
