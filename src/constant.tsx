@@ -6,10 +6,17 @@ import { Condizioni } from "./pages/condizioni/condizioni";
 import { Fatturazioni } from "./pages/fatturazione/fatturazione";
 import { Premi } from "./pages/premi/premi";
 import { PrimiPassi } from "./pages/primi-passi/primi-passi";
-
+import ReceiptIcon from "@mui/icons-material/Receipt";
+import BookmarkIcon from "@mui/icons-material/Bookmark";
+import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp";
+import CreditCardIcon from "@mui/icons-material/CreditCard";
+import SubscriptionsIcon from "@mui/icons-material/Subscriptions";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 export const listArguments: Argument[] = [
   {
     title: "Commissioni, fatturazione e tasse",
+    icon: <ReceiptIcon style={{ color: "white" }} />,
     links: [
       {
         title: "Procedura per attivare sistema di fatturazione",
@@ -46,6 +53,7 @@ export const listArguments: Argument[] = [
   },
   {
     title: "Prenotazioni",
+    icon: <BookmarkIcon style={{ color: "white" }} />,
     links: [
       {
         title: "Gestire le prenotazioni",
@@ -75,6 +83,8 @@ export const listArguments: Argument[] = [
   },
   {
     title: "Primi passi in Coldsharing",
+    icon: <KeyboardDoubleArrowUpIcon style={{ color: "white" }} />,
+
     links: [
       {
         title: "Cosa fare per registrarti",
@@ -116,6 +126,7 @@ export const listArguments: Argument[] = [
   },
   {
     title: "Condizioni e pagamenti dei clienti",
+    icon: <CreditCardIcon style={{ color: "white" }} />,
     links: [
       {
         title: "Come impostare o modificare le condizioni dell’Ubicazione",
@@ -145,6 +156,7 @@ export const listArguments: Argument[] = [
   },
   {
     title: "Abbonamenti",
+    icon: <SubscriptionsIcon style={{ color: "white" }} />,
     links: [
       {
         title: "Abbonamento Basic",
@@ -174,6 +186,7 @@ export const listArguments: Argument[] = [
   },
   {
     title: "Account e accesso",
+    icon: <AccountCircleIcon style={{ color: "white" }} />,
     links: [
       {
         title: "Come modificare o reimpostare le tue credenziali di accesso",
@@ -191,6 +204,7 @@ export const listArguments: Argument[] = [
   },
   {
     title: "Premi",
+    icon: <EmojiEventsIcon style={{ color: "white" }} />,
     links: [
       {
         title: "Che cosa è il premio Fresh Space Award?",

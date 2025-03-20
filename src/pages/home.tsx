@@ -10,6 +10,7 @@ export const Home = () => {
           <ArgumentCard
             key={item.title}
             title={item.title}
+            icon={item.icon}
             links={item.links}
           />
         ))}

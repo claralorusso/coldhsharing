@@ -1,5 +1,6 @@
 export interface Argument {
   title: string;
+  icon: any;
   links: LinkItem[];
 }
 
