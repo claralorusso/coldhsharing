@@ -12,7 +12,9 @@ import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp
 import CreditCardIcon from "@mui/icons-material/CreditCard";
 import SubscriptionsIcon from "@mui/icons-material/Subscriptions";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import CookieIcon from "@mui/icons-material/Cookie";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
+import { Cookies } from "./pages/cookies/cookies";
 export const listArguments: Argument[] = [
   {
     title: "Commissioni, fatturazione e tasse",
@@ -217,6 +219,38 @@ export const listArguments: Argument[] = [
         path: "/reward",
         section: "premier",
         element: <Premi />,
+      },
+    ],
+  },
+  {
+    title: "Informativa sui cookie di Cold Sharing",
+    icon: <CookieIcon style={{ color: "white" }} />,
+    links: [
+      {
+        title: "Definizioni, caratteristiche e applicazione della normativa",
+        path: "/cookies",
+        section: "main-info",
+        element: <Cookies />,
+      },
+      {
+        title:
+          "Tipologie di cookie utilizzate dal Sito e possibilità di (de-)selezione",
+        path: "/cookies",
+        section: "cookie-types",
+        element: <Cookies />,
+      },
+      {
+        title: "Come visualizzare e modificare i cookie ",
+        path: "/cookies",
+        section: "manage-cookie",
+        element: <Cookies />,
+      },
+      {
+        title:
+          "Per quanto tempo i cookie rimarranno sul mio computer o dispositivo mobile?",
+        path: "/cookies",
+        section: "times",
+        element: <Cookies />,
       },
     ],
   },

@@ -88,7 +88,7 @@ export const Abbonamenti = () => {
                 <ListItemIcon>-</ListItemIcon>
                 <ListItemText>
                   Arricchire la galleria delle tue inserzioni con fino a 5
-                  fotografie e un video;
+                  fotografie;
                 </ListItemText>
               </ListItem>
               <ListItem disablePadding>

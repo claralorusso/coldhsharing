@@ -62,19 +62,33 @@ export const Account = () => {
             <div className="pb-2 font-bold"> Domande frequenti</div>
             <Alert severity="info">
               <AlertTitle className="font-bold">
-                Perchè il mio account non risulta attivo?
+                Perchè il mio account risulta attivo con restrizioni?
               </AlertTitle>
-              Dopo esserti registrato, dovrai confermare l’indirizzo alla
-              notifica ricevuta per e-mail.
-            </Alert>
-            <Alert severity="info">
-              <AlertTitle className="font-bold">
-                Perchè il mio account risulta bloccato?
-              </AlertTitle>
-              Se dopo aver fatto l’accesso alla piattaforma il tuo profilo
-              risulta bloccato significa che la tua richiesta di registrazione è
-              in fase di validazione o è stata rifiutata o sei stato bloccato
-              per dei comportamenti che non rispettano il codice di condotta.
+              Se dopo l’accesso alla piattaforma compare il messaggio “Profilo
+              attivo con restrizioni. Serve supporto? Contattaci.”, significa
+              che:
+              <List>
+                <ListItem disablePadding>
+                  <ListItemIcon>-</ListItemIcon>
+                  <ListItemText>
+                    la tua richiesta di registrazione è ancora in fase di
+                    validazione;
+                  </ListItemText>
+                </ListItem>
+                <ListItem disablePadding>
+                  <ListItemIcon>-</ListItemIcon>
+                  <ListItemText>
+                    la tua richiesta è stata rifiutata;
+                  </ListItemText>
+                </ListItem>
+                <ListItem disablePadding>
+                  <ListItemIcon>-</ListItemIcon>
+                  <ListItemText>
+                    il tuo profilo è stato bloccato per comportamenti non
+                    conformi al codice di condotta.
+                  </ListItemText>
+                </ListItem>
+              </List>
             </Alert>
           </AccordionDetails>
         </Accordion>

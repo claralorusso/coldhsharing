@@ -94,8 +94,7 @@ export const PrimiPassi = () => {
             contratto firmato. Riceverai una notifica, alla mail con cui ti sei
             registrato, di accettazione o rifiuto della richiesta di
             registrazione dalla piattaforma entro le successive 72 ore durante
-            le quali il tuo profilo risulterà bloccato e non potrai svolgere
-            alcuna attività.
+            le quali il tuo profilo risulterà attivo, ma con restrizioni.
           </div>
           <div className="pb-2 font-bold"> Domande frequenti</div>
           <Alert severity="info">
@@ -176,6 +175,33 @@ export const PrimiPassi = () => {
             </AlertTitle>
             Al termine della registrazione su Stripe nel tuo profilo vedrai la
             dicitura <strong>Connesso su Stripe</strong>.
+          </Alert>
+          <Alert severity="info">
+            <AlertTitle className="font-bold">
+              Perchè il mio account risulta attivo con restrizioni?
+            </AlertTitle>
+            Se dopo l’accesso alla piattaforma compare il messaggio “Profilo
+            attivo con restrizioni. Serve supporto? Contattaci.”, significa che:
+            <List>
+              <ListItem disablePadding>
+                <ListItemIcon>-</ListItemIcon>
+                <ListItemText>
+                  la tua richiesta di registrazione è ancora in fase di
+                  validazione;
+                </ListItemText>
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemIcon>-</ListItemIcon>
+                <ListItemText>la tua richiesta è stata rifiutata;</ListItemText>
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemIcon>-</ListItemIcon>
+                <ListItemText>
+                  il tuo profilo è stato bloccato per comportamenti non conformi
+                  al codice di condotta.
+                </ListItemText>
+              </ListItem>
+            </List>
           </Alert>
         </AccordionDetails>
       </Accordion>

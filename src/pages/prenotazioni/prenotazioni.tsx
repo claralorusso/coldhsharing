@@ -126,6 +126,112 @@ export const Prenotazioni = () => {
               a seconda delle esigenze della tua attività.
             </div>
             <div className="font-bold pb-2">
+              Come funzionano i prezzi e i pagamenti
+            </div>
+            <div className="pb-2">
+              Quando ricevi una richiesta di prenotazione, potrai consultare la
+              stessa nella sezione <strong>Richieste di prenotazione</strong> se
+              la condivisione non è iniziata o in{" "}
+              <strong>Storico prenotazioni </strong>se la condivisione è
+              iniziata o terminata.
+            </div>
+            <div className="pb-2">
+              Il costo di condivisione è presente nella card visualizzata nelle
+              sezioni succitate nel campo <strong>Totale accredito</strong> e
+              rappresenta l’importo che riceverai, al netto della percentuale di
+              trattenuta riportata nel contratto firmato, sul conto bancario
+              inserito all’interno del tool di Stripe. Tale importo sarà erogato
+              nel momento in cui la richiesta di prenotazione diventa
+              prenotazione e la data potrà essere visualizzata nel campo{" "}
+              <strong>Data accredito</strong> presente sempre nella stessa card.
+            </div>
+            <div className="pb-2">
+              Ulteriori voci di costo visibili nella card sono:
+            </div>
+            <List>
+              <ListItem disablePadding>
+                <ListItemIcon>-</ListItemIcon>
+                <ListItemText>
+                  <strong>Costo condivisione</strong>, rappresenta il costo
+                  totale della condivisione giornaliera, determinato durante la
+                  configurazione del locale, moltiplicato per il numero di
+                  giorni prenotati dal Cliente;
+                </ListItemText>
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemIcon>-</ListItemIcon>
+                <ListItemText>
+                  <strong>Costo IVA</strong>, indica l’IVA che il Cliente ha
+                  pagato sulla prenotazione ricevuta;
+                </ListItemText>
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemIcon>-</ListItemIcon>
+                <ListItemText>
+                  <strong>Costo Totale</strong>, è la somma delle voci
+                  precedenti.
+                </ListItemText>
+              </ListItem>
+            </List>
+            <div className="pb-2">Ecco come funziona:</div>
+            <List>
+              <ListItem disablePadding>
+                <ListItemIcon>-</ListItemIcon>
+                <ListItemText>
+                  Nel caso non fosse presente la cancellazione gratuita, quando
+                  Il Cliente invia una richiesta di prenotazione e questa viene
+                  accettata automaticamente o manualmente diventa a tutti gli
+                  effetti una prenotazione. Nel campo 'Data di accredito' sarà
+                  visualizzata la data di accettazione della richiesta. A
+                  partire da quella data potrai ricevere il 'Totale accredito';
+                </ListItemText>
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemIcon>-</ListItemIcon>
+                <ListItemText>
+                  Nel caso fosse presente la cancellazione gratuita, quando Il
+                  Cliente invia una richiesta di prenotazione e questa viene
+                  accettata automaticamente o manualmente si dovrà attendere la
+                  fine del periodo della cancellazione gratuita per diventare a
+                  tutti gli effetti una prenotazione. Nel campo 'Data di
+                  accredito' sarà visualizzata la data successiva all’ultimo
+                  giorno di cancellazione gratuita. A partire da quella data
+                  potrai ricevere il 'Totale accredito';
+                </ListItemText>
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemIcon>-</ListItemIcon>
+                <ListItemText>
+                  Nel caso non fosse presente la cancellazione gratuita e la
+                  funzionalità di 'richiesta prenotazione' non fosse attiva,
+                  quando Il Cliente invia una richiesta di prenotazione
+                  automaticamente avverrà la conferma immediata. Nel campo 'Data
+                  di accredito' sarà visualizzata la data in cui il Cliente ha
+                  effettuato la prenotazione. A partire da quella data potrai
+                  ricevere il 'Totale accredito';
+                </ListItemText>
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemIcon>-</ListItemIcon>
+                <ListItemText>
+                  Nel caso fosse presente la cancellazione gratuita e la
+                  funzionalità di 'richiesta prenotazione' non fosse attiva,
+                  quando Il Cliente invia una richiesta di prenotazione si dovrà
+                  attendere la fine del periodo di cancellazione gratuita per
+                  diventare a tutti gli effetti una prenotazione. Nel campo
+                  'Data di accredito' sarà visualizzata la data successiva
+                  all’ultimo giorno di cancellazione gratuita. A partire da
+                  quella data potrai ricevere il 'Totale accredito';
+                </ListItemText>
+              </ListItem>
+            </List>
+            <div className="pb-2">
+              Quando viene inviata una richiesta di prenotazione non sarà
+              possibile modificare il costo di condivisione configurato nell’
+              anagrafica locale. Eventuali modifiche all’anagrafica del locale
+              saranno valide solo per le nuove richieste che riceverai.
+            </div>
+            <div className="font-bold pb-2">
               Come impostare la richiesta di prenotazione
             </div>
             <div className="pb-2">
