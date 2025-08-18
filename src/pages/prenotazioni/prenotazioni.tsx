@@ -762,6 +762,7 @@ export const Prenotazioni = () => {
               commissione che dovrai o hai pagato non ti verrà rimborsata dalla
               piattaforma.
             </div>
+            <div className="pb-2 font-bold">Gestione delle Penali</div>
             <div className="pb-2">
               Puoi impostare la gestione di una penale sulla nostra piattaforma,
               ecco come:{" "}

@@ -205,11 +205,12 @@ export const Account = () => {
               <ListItem disablePadding>
                 <ListItemIcon>-</ListItemIcon>
                 <ListItemText>
-                  Conseguenze per le Violazioni: Dettagli sulle possibili
-                  sanzioni per violazioni del codice, che possono includere il
-                  blocco del profilo nella piattaforma. In tal caso l’utente
-                  riceverà notifica per e-mail del blocco del profilo, inibendo
-                  qualsiasi attività all’interno della piattaforma.
+                  Conseguenze per le Violazioni: In caso di comportamenti
+                  contrari al codice di condotta, possono essere applicate
+                  sanzioni che includono il blocco del profilo. In tal caso,
+                  l’utente riceverà una notifica via e-mail. Sarà comunque
+                  possibile accedere alla piattaforma, ma non si potranno
+                  apportare modifiche al profilo.
                 </ListItemText>
               </ListItem>
             </List>
