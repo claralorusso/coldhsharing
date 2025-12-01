@@ -11,8 +11,12 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import CookieTable from "./cookie-table";
-import { cookieImportantRows, marketingRows } from "./cookie-table.constants";
-
+import {
+  cookieImportantRows,
+  marketingRows,
+  preferenzeRows,
+  sicurezzeRows,
+} from "./cookie-table.constants";
 export const Cookies = () => {
   const { section } = useParams();
   const [expanded, setExpanded] = useState("");
@@ -184,6 +188,8 @@ export const Cookies = () => {
             </div>
             <CookieTable title="Necessari" rows={cookieImportantRows} />
             <CookieTable title="Marketing" rows={marketingRows} />
+            <CookieTable title="Preferenze" rows={preferenzeRows} />
+            <CookieTable title="Sicurezza" rows={sicurezzeRows} />
           </AccordionDetails>
         </Accordion>
         <Accordion

@@ -279,34 +279,27 @@ export const Abbonamenti = () => {
           </AccordionSummary>
           <AccordionDetails>
             <div className="pb-2">
-              Gli abbonamenti acquistati saranno automaticamente rinnovati al
-              termine della scadenza.
+              Gli abbonamenti si rinnovano automaticamente alla scadenza.
             </div>
             <div className="pb-2">
-              In qualsiasi momento è possibile annullarne il rinnovo. Ecco come:
+              Per disattivare il rinnovo:
             </div>
             <List>
               <ListItem disablePadding>
                 <ListItemIcon>-</ListItemIcon>
                 <ListItemText>
-                  Posizione il cursore sulla foto del tuo Profilo che si trova
-                  alla sinistra del tasto Homepage posizionato nella barra in
-                  alto e clicca su <strong>Profilo</strong>.
+                  Vai su <strong>Profilo</strong> → <strong>sezione Abbonamenti</strong> → clicca su <strong>Annulla rinnovo</strong>
                 </ListItemText>
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon>-</ListItemIcon>
                 <ListItemText>
-                  Scorri verso il basso fino a raggiungere la sezione{" "}
-                  <strong>Abbonamenti</strong> nel quale troverai l’abbonamento
-                  acquistato, la data di acquisto, la data di scadenza, lo stato
-                  e la relativa fattura. Lo stato indica se l’abbonamento è
-                  attivo (Stato = Attivo) o scaduto (Stato = Annullato).
-                  Cliccando su ‘Annulla rinnovo’ verrà disattivato il rinnovo
-                  automatico.
+                  In alternativa, usa il link nell’email ricevuta al momento dell’acquisto.
                 </ListItemText>
               </ListItem>
             </List>
+            Non riceverai una conferma via email: controlla nella <strong>sezione Abbonamenti</strong> che lo stato sia cambiato in <i>Annullato</i>.
+    
             <div className="pb-2 font-bold"> Domande frequenti</div>
             <Alert severity="info">
               <AlertTitle className="font-bold">

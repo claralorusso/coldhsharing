@@ -64,21 +64,15 @@ export const Account = () => {
               <AlertTitle className="font-bold">
                 Perchè il mio account risulta attivo con restrizioni?
               </AlertTitle>
-              Se dopo l’accesso alla piattaforma compare il messaggio “Profilo
-              attivo con restrizioni. Serve supporto? Contattaci.”, significa
+              Se dopo l’accesso alla piattaforma compare il messaggio <i>Profilo
+              attivo con restrizioni. Serve supporto? Contattaci.”</i>“, significa
               che:
               <List>
                 <ListItem disablePadding>
                   <ListItemIcon>-</ListItemIcon>
                   <ListItemText>
                     la tua richiesta di registrazione è ancora in fase di
-                    validazione;
-                  </ListItemText>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemIcon>-</ListItemIcon>
-                  <ListItemText>
-                    la tua richiesta è stata rifiutata;
+                    validazione oppure è stata rifiutata;
                   </ListItemText>
                 </ListItem>
                 <ListItem disablePadding>

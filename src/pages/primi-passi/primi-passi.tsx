@@ -112,6 +112,25 @@ export const PrimiPassi = () => {
             </a>
             .
           </Alert>
+          <Alert severity="info">
+            <AlertTitle className="font-bold">
+            Perchè il mio account risulta attivo con restrizioni?
+            </AlertTitle>
+            <p>Se dopo l’accesso alla piattaforma compare il messaggio <i>“Profilo attivo con restrizioni. Serve supporto? Contattaci.”</i>, significa che:</p>
+            <ul>
+              <li>- la tua richiesta di registrazione è ancora in fase di validazione oppure è stata rifiutata;</li>
+              <li>- il tuo profilo è stato bloccato per comportamenti non conformi al codice di condotta.</li>
+            </ul>
+          </Alert>
+          <Alert severity="info">
+            <AlertTitle className="font-bold">
+            Perchè non riesco ad accedere alla piattaforma? 
+            </AlertTitle>
+            Se dopo l’accesso alla piattaforma compare il messaggio “Conferma la mail di registrazione prima di poter
+             procedere!”, significa che non hai ancora verificato il tuo indirizzo email. 
+             Controlla la casella di posta e apri l’email di registrazione ricevuta al momento dell’iscrizione, 
+             quindi clicca sul link di conferma per attivare il tuo account.
+          </Alert>
         </AccordionDetails>
       </Accordion>
 
@@ -178,30 +197,13 @@ export const PrimiPassi = () => {
           </Alert>
           <Alert severity="info">
             <AlertTitle className="font-bold">
-              Perchè il mio account risulta attivo con restrizioni?
+              Perchè il mio account risulta attivo non completo?
             </AlertTitle>
-            Se dopo l’accesso alla piattaforma compare il messaggio “Profilo
-            attivo con restrizioni. Serve supporto? Contattaci.”, significa che:
-            <List>
-              <ListItem disablePadding>
-                <ListItemIcon>-</ListItemIcon>
-                <ListItemText>
-                  la tua richiesta di registrazione è ancora in fase di
-                  validazione;
-                </ListItemText>
-              </ListItem>
-              <ListItem disablePadding>
-                <ListItemIcon>-</ListItemIcon>
-                <ListItemText>la tua richiesta è stata rifiutata;</ListItemText>
-              </ListItem>
-              <ListItem disablePadding>
-                <ListItemIcon>-</ListItemIcon>
-                <ListItemText>
-                  il tuo profilo è stato bloccato per comportamenti non conformi
-                  al codice di condotta.
-                </ListItemText>
-              </ListItem>
-            </List>
+            Se dopo l’accesso alla piattaforma visualizzi il messaggio <i>“Il profilo non è completo. 
+            Connettiti su Stripe per ricevere prenotazioni”</i>, significa che la tua registrazione è 
+            stata approvata, ma non hai ancora collegato il tuo profilo a Stripe. 
+            Fino a quando non completerai questa connessione, non potrai ricevere prenotazioni 
+            dai potenziali clienti.
           </Alert>
         </AccordionDetails>
       </Accordion>

@@ -30,22 +30,22 @@ export default function CookieTable({ title, rows }: CookieTableProps) {
           {title}
         </Typography>
       )}
-      <Table>
+      <Table sx={{ tableLayout: "fixed", width: "100%" }}>
         <TableHead>
           <TableRow sx={{ backgroundColor: "#f5f5f5" }}>
-            <TableCell>
+            <TableCell sx={{ width: "15%" }}>
               <b>Nome</b>
             </TableCell>
-            <TableCell>
+            <TableCell sx={{ width: "15%" }}>
               <b>Fornitore</b>
             </TableCell>
-            <TableCell>
+            <TableCell sx={{ width: "40%", whiteSpace: "normal", wordBreak: "break-word" }}>
               <b>Scopo</b>
             </TableCell>
-            <TableCell>
+            <TableCell sx={{ width: "20%" }}>
               <b>Durata massima di archiviazione</b>
             </TableCell>
-            <TableCell>
+            <TableCell sx={{ width: "10%" }}>
               <b>Tipo</b>
             </TableCell>
           </TableRow>
