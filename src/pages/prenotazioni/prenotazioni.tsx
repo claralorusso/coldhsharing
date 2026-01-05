@@ -368,12 +368,24 @@ export const Prenotazioni = () => {
               <AlertTitle className="font-bold">
                 Quali notifiche riceverò?
               </AlertTitle>
-              <div>Ti invieremo un'e-mail se:</div>
-              <div>Hai ricevuto una nuova richiesta di prenotazione</div>
-              <div>Hai accettato o rifiutato una richiesta di prenotazione</div>
-              <div> Non hai fornito riscontro entro le 48 ore</div>{" "}
-              <div>Il Cliente ha annullato la richiesta di prenotazione</div>
+              <div>Ti invieremo una e-mail se:</div>
+              <div>- Hai ricevuto una nuova richiesta di prenotazione</div>
+              <div>- Hai accettato o rifiutato una richiesta di prenotazione</div>
+              <div>- Non hai fornito riscontro entro le 48 ore</div>{" "}
+              <div>- Il Cliente ha annullato la richiesta di prenotazione</div>
             </Alert>
+              <Alert severity="info">
+                <AlertTitle className="font-bold">
+                  Cosa succede se un cliente prenota più locali refrigerati contemporaneamente?
+                </AlertTitle>
+                Quando un cliente seleziona più locali refrigerati appartenenti allo stesso profilo,
+                le prenotazioni vengono inviate nello stesso momento ma gestite come richieste separate.
+                Ogni prenotazione segue un flusso di gestione autonomo.
+                Se è attiva la richiesta di prenotazione, puoi valutare ciascuna richiesta singolarmente,
+                accettandone una e rifiutandone un’altra.
+                L’accettazione di una prenotazione non comporta automaticamente
+                l’accettazione delle altre.
+              </Alert>
             <Alert severity="info">
               <AlertTitle className="font-bold">
                 Posso gestire delle richieste sovrapposte?
