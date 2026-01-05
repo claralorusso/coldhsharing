@@ -6,11 +6,8 @@ import {
   Button,
 } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
-import { useNavigate } from "react-router-dom";
 
 export const Topbar = () => {
-  const navigate = useNavigate();
-
 
   return (
     <AppBar
