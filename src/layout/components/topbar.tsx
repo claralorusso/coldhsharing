@@ -8,7 +8,6 @@ import {
 import HomeIcon from "@mui/icons-material/Home";
 
 export const Topbar = () => {
-
   return (
     <AppBar
       position="static"
