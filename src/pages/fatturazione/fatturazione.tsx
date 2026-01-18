@@ -65,7 +65,7 @@ export const Fatturazioni = () => {
                   to="/first-action/manage-sign"
                   className="text-blue-500 underline"
                 >
-                  Primi passi in ColdSharing
+                  Primi passi in Cold Sharing
                 </Link>
               </span>
               ).
@@ -172,7 +172,7 @@ export const Fatturazioni = () => {
               Il ruolo commerciale potrà essere modificato solo inviando una
               richiesta al servizio clienti attraverso il seguente{" "}
               <Link
-                to="https://coldsharingticketing.zohodesk.eu/portal/en/newticket"
+                to="https://coldsharing.zohodesk.eu/portal/it/newticket"
                 className="text-blue-500 underline"
               >
                 Link
@@ -624,7 +624,7 @@ export const Fatturazioni = () => {
               contattare il servizio clienti attraverso il seguente{" "}
               <span>
                 <Link
-                  to="https://coldsharingticketing.zohodesk.eu/portal/en/newticket"
+                  to="https://coldsharing.zohodesk.eu/portal/it/newticket"
                   className="text-blue-500 underline"
                 >
                   Link

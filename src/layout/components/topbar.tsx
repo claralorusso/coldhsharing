@@ -24,7 +24,7 @@ export const Topbar = () => {
           {/* Immagine logo */}
           <Box
             component="img"
-            src="/logo.png"
+            src="/logoabout.png"
             alt="Coldsharing"
             sx={{
               height: 150,
@@ -34,7 +34,7 @@ export const Topbar = () => {
           />
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <Typography variant="subtitle1" sx={{ fontWeight: 700, lineHeight: 1.2 }}>
-              Coldsharing Help Center
+              Cold Sharing Help Center
             </Typography>
             <Typography
               variant="caption"

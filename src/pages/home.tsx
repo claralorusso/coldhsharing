@@ -27,7 +27,7 @@ export const Home = () => {
             Sfoglia per argomento
           </h1>
           <p className="text-slate-600 mb-5 text-sm sm:text-base">
-            Trova rapidamente le informazioni di cui hai bisogno su Coldsharing:
+            Trova rapidamente le informazioni di cui hai bisogno su Cold Sharing:
             commissioni, prenotazioni, abbonamenti, account e altro.
           </p>
 

@@ -326,7 +326,7 @@ export const Abbonamenti = () => {
               attraverso il seguente{" "}
               <a
                 className="text-blue-500"
-                href="https://coldsharingticketing.zohodesk.eu/portal/en/newticket"
+                href="https://coldsharing.zohodesk.eu/portal/it/newticket"
               >
                 link{" "}
               </a>
