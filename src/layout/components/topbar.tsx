@@ -24,7 +24,7 @@ export const Topbar = () => {
           {/* Immagine logo */}
           <Box
             component="img"
-            src="/logosenzascritta.jpeg"
+            src="/logotrasp.png"
             alt="Coldsharing"
             sx={{
               height: 150,
