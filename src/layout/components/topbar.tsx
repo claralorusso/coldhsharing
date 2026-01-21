@@ -34,13 +34,13 @@ export const Topbar = () => {
           />
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <Typography variant="subtitle1" sx={{ fontWeight: 700, lineHeight: 1.2 }}>
-              Cold Sharing Help Center
+              Il centro di supporto di ColdSharing
             </Typography>
             <Typography
               variant="caption"
               sx={{ color: "#64748b" }} // text-slate-500
             >
-              Guide, FAQ e supporto per i Fornitori
+              Guide, FAQ e supporto per Clienti e Fornitori
             </Typography>
           </Box>
         </Box>
