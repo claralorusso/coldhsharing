@@ -1,4 +1,4 @@
-import React from "react";
+
 import type { FaqHelp, FaqItem } from "../../../../shared";
 import { HelpDeskLink } from "../../../../shared";
 
