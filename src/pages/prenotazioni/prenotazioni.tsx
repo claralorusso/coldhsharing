@@ -96,7 +96,7 @@ export const Prenotazioni = () => {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon>4</ListItemIcon>
-                <ListItemText primary="Ricevi una notifica della richiesta di prenotazione ed avrai 48 ore di tempo per accettarla/rifiutarla. Qualora non si fornisca un riscontro la richiesta sarà automaticamente rifiutata; anche il Cliente entro le prossime 48 ore dall’invio della richiesta avrà la possibilità di rifiutarla. " />
+                <ListItemText primary="Ricevi una notifica della richiesta di prenotazione ed avrai 48 ore di tempo per accettarla/rifiutarla. In assenza di un riscontro, la richiesta verrà automaticamente accettata o rifiutata in base alla preferenza impostata in fase di creazione dell’Ubicazione a cui il tuo locale è associato; anche il Cliente entro le prossime 48 ore dall’invio della richiesta avrà la possibilità di rifiutarla. " />
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon>5</ListItemIcon>
@@ -300,9 +300,10 @@ export const Prenotazioni = () => {
                     se la richiesta viene fatta in una data di check-in
                     superiore ai quattro giorni dalla data della ricerca,
                     riceverai una notifica e da quel momento avrai 48 ore di
-                    tempo per accettarla o rifiutarla. Nel caso in cui non si
-                    fornisca un riscontro la richiesta di prenotazione sarà
-                    automaticamente rifiutata. Anche il Cliente avrà la
+                    tempo per accettarla o rifiutarla. In assenza di un riscontro, 
+                    la richiesta verrà automaticamente accettata o rifiutata in base alla 
+                    preferenza impostata in fase di creazione dell’Ubicazione a cui il tuo 
+                    locale è associato. Anche il Cliente avrà la
                     possibilità di cancellare la richiesta entro le 48 ore
                     dall’invio e prima che tu fornisca un riscontro;
                   </ListItemText>
@@ -351,9 +352,11 @@ export const Prenotazioni = () => {
             </div>
             <div className="pb-2">
               Rifiutare molte richieste può avere un impatto negativo
-              sull’opinione che i Clienti avranno dei tuoi Locali. Tieni
-              presente che, se non rispondi a una richiesta di prenotazione
-              entro le prossime 48 ore, verrà automaticamente rifiutata.
+              sull’opinione che i Clienti avranno dei tuoi Locali. Tieni presente 
+              che, se non rispondi a una richiesta di prenotazione entro le prossime
+               48 ore, la richiesta verrà automaticamente accettata o rifiutata 
+               in base alla preferenza impostata in fase di creazione dell’Ubicazione 
+               a cui il tuo locale è associato.
             </div>
             <div className="pb-2 font-bold"> Domande frequenti</div>
             <Alert severity="info">
@@ -414,12 +417,9 @@ export const Prenotazioni = () => {
               <AlertTitle className="font-bold">
                 Cosa succede se non rispondo a una richiesta di prenotazione?
               </AlertTitle>
-              Se non accetti o rifiuti una richiesta entro 48 ore, ti
-              informeremo che è scaduta e quindi automaticamente rifiutata. Dopo
-              la scadenza, non potrai più fare nulla su quella richiesta di
-              prenotazione specifica. I Clienti riceveranno un'e-mail in cui
-              notifichiamo il tuo rifiuto e dove suggeriamo altri locali da
-              poter prenotare.
+              In assenza di un riscontro, la richiesta verrà automaticamente accettata o 
+              rifiutata in base alla preferenza impostata in fase di creazione dell’Ubicazione 
+              a cui il tuo locale è associato.
             </Alert>
           </AccordionDetails>
         </Accordion>
@@ -588,9 +588,10 @@ export const Prenotazioni = () => {
                     se la richiesta viene fatta in una data di check-in
                     superiore ai quattro giorni dalla data della ricerca,
                     riceverai una notifica e da quel momento avrai 48 ore di
-                    tempo per accettarla o rifiutarla. Nel caso in cui non si
-                    fornisca un riscontro la richiesta di prenotazione sarà
-                    automaticamente rifiutata. Anche il Cliente avrà la
+                    tempo per accettarla o rifiutarla. In assenza di un riscontro, 
+                    la richiesta verrà automaticamente accettata o rifiutata in base 
+                    alla preferenza impostata in fase di creazione dell’Ubicazione 
+                    a cui il tuo locale è associato. Anche il Cliente avrà la
                     possibilità di cancellare la richiesta entro le 48 ore
                     dall’invio e prima che tu fornisca un riscontro;
                   </ListItemText>

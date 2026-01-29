@@ -346,9 +346,10 @@ export const PrimiPassi = () => {
                     se la richiesta viene fatta in una data di check-in
                     superiore ai quattro giorni dalla data della ricerca,
                     riceverai una notifica e da quel momento avrai 48 ore di
-                    tempo per accettarla o rifiutarla. Nel caso in cui non si
-                    fornisca un riscontro la richiesta di prenotazione sarà
-                    automaticamente rifiutata. Anche il Cliente avrà la
+                    tempo per accettarla o rifiutarla. In assenza di un riscontro, 
+                    la richiesta verrà automaticamente accettata o rifiutata in base 
+                    alla preferenza impostata in fase di creazione dell’Ubicazione a 
+                    cui il tuo locale è associato. Anche il Cliente avrà la
                     possibilità di cancellare la richiesta entro le 48 ore
                     dall’invio e prima che tu fornisca un riscontro;
                   </div>
