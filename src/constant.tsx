@@ -20,13 +20,11 @@ import LoginIcon from "@mui/icons-material/Login";
 import EventAvailableIcon from "@mui/icons-material/EventAvailable";
 import EditCalendarIcon from "@mui/icons-material/EditCalendar";
 import InfoIcon from "@mui/icons-material/Info";
-import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import { RegistrazioneCliente } from "./pages/cliente/registrazione";
 import { AccessoCliente } from "./pages/cliente/accesso";
 import { GestionePrenotazioneCliente } from "./pages/cliente/gestione-prenotazione";
 import { ModificheCancellazioniCliente } from "./pages/cliente/modifiche-cancellazioni";
 import { InformazioniPrenotazioneCliente } from "./pages/cliente/informazioni-prenotazione";
-import { SupportoCliente } from "./pages/cliente/supporto";
 export const listArgumentsFornitore: Argument[] = [
   {
     title: "Commissioni, fatturazione e tasse",
