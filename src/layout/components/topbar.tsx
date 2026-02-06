@@ -30,7 +30,19 @@ export const Topbar = () => {
         borderBottom: "1px solid #e2e8f0", // border-slate-200
       }}
     >
-      <Toolbar sx={{ maxWidth: "1120px", width: "100%", mx: "auto", px: 2 }}>
+         <Toolbar
+            sx={{
+              maxWidth: "1120px",
+              width: "100%",
+              mx: "auto",
+              px: 2,
+              display: "flex",
+              flexDirection: { xs: "column", sm: "row" },
+              alignItems: { xs: "flex-start", sm: "center" },
+              gap: { xs: 1, sm: 0 },
+            }}
+          >
+
         {/* Logo + titolo */}
         <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, flexGrow: 1 }}>
           {/* Immagine logo */}
