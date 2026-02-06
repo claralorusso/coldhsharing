@@ -9,7 +9,7 @@ export const informazioniPrenotazioneCliente = {
   items: [
     {
       id: "e1",
-      question: "E.1) Dove trovo la mia prenotazione?",
+      question: "Dove trovo la mia prenotazione?",
       answer: (
         <>
           Quando effettui una prenotazione, puoi consultarla nella sezione <strong>\"Le mie prenotazioni\"</strong> se la condivisione non è ancora iniziata, oppure nella sezione <strong>\"Storico prenotazioni\"</strong> se la condivisione è iniziata o già terminata.
@@ -18,7 +18,7 @@ export const informazioniPrenotazioneCliente = {
     },
     {
       id: "e2",
-      question: "E.2) Quando viene addebitato il pagamento?",
+      question: "Quando viene addebitato il pagamento?",
       answer: (
         <>
           Dipende dal tipo di prenotazione e dalla presenza o meno del periodo di cancellazione gratuita. La data di addebito è sempre visibile nella card della prenotazione.
@@ -64,7 +64,7 @@ export const informazioniPrenotazioneCliente = {
     },
     {
       id: "e3",
-      question: "E.3) Cosa comprende il “Totale pagato”?",
+      question: "Cosa comprende il “Totale pagato”?",
       answer: (
         <>
           L’importo totale comprende tutte le voci di costo, con dettaglio di spesa IVA esclusa e IVA inclusa, se non sei nel periodo di cancellazione gratuita.
@@ -73,7 +73,7 @@ export const informazioniPrenotazioneCliente = {
     },
     {
       id: "e4",
-      question: "E.4) Ho ricevuto un addebito errato. Cosa devo fare?",
+      question: "Ho ricevuto un addebito errato. Cosa devo fare?",
       answer: (
         <>
           Se hai ricevuto un addebito errato da Cold Sharing.it puoi aprire un ticket inserendo nell&apos;oggetto il testo <strong>"Addebito errato"</strong>.
@@ -83,7 +83,7 @@ export const informazioniPrenotazioneCliente = {
     },
     {
       id: "e5",
-      question: "E.5) Come so se ho prenotato un locale condiviso?",
+      question: "Come so se ho prenotato un locale condiviso?",
       answer: (
         <>
           La modalità di utilizzo è indicata nel campo <strong>"Modalità di condivisione"</strong>:
@@ -96,7 +96,7 @@ export const informazioniPrenotazioneCliente = {
     },
     {
       id: "e6",
-      question: "E.6) Quali altre informazioni posso vedere nella card di riepilogo?",
+      question: "Quali altre informazioni posso vedere nella card di riepilogo?",
       answer: (
         <>
           Altre informazioni riportate nella prenotazione:
@@ -114,14 +114,14 @@ export const informazioniPrenotazioneCliente = {
     },
     {
       id: "e7",
-      question: "E.7) Come si può richiedere una fattura?",
+      question: "Come si può richiedere una fattura?",
       answer: (
         <>Terminato il periodo di condivisione il Cliente può richiedere solo al Fornitore la fattura.</>
       ),
     },
     {
       id: "e8",
-      question: "E.8) All'arrivo dovrò pagare dei costi extra?",
+      question: "All'arrivo dovrò pagare dei costi extra?",
       answer: (
         <>
           No, all&apos;arrivo non dovrai pagare nulla.
@@ -132,7 +132,7 @@ export const informazioniPrenotazioneCliente = {
     },
     {
       id: "e9",
-      question: "E.9) Terminata la condivisione il Fornitore mi può addebitare costi extra?",
+      question: "Terminata la condivisione il Fornitore mi può addebitare costi extra?",
       answer: (
         <>
           Sì, il Fornitore ti potrà addebitare altri costi (es: costi di prelievo, costi di movimentazione, ecc.) su servizi non richiesti in fase di prenotazione.
@@ -143,7 +143,7 @@ export const informazioniPrenotazioneCliente = {
     },
     {
       id: "e10",
-      question: "E.10) Come modificare la modalità di pagamento?",
+      question: "Come modificare la modalità di pagamento?",
       answer: (
         <>
           Modificare la modalità di pagamento è possibile solo se è in corso il periodo di cancellazione gratuita.
@@ -153,7 +153,7 @@ export const informazioniPrenotazioneCliente = {
     },
     {
       id: "e11",
-      question: "E.11) Come modificare l'orario di arrivo?",
+      question: "Come modificare l'orario di arrivo?",
       answer: (
         <>
           L’orario di arrivo non può essere modificato direttamente dalla piattaforma.

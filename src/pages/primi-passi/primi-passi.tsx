@@ -67,8 +67,8 @@ export const PrimiPassi = () => {
             <ListItem disablePadding>
               <ListItemIcon>1</ListItemIcon>
               <ListItemText>
-                <strong>Cliente: </strong>se desideri solo inviare una richiesta
-                di prenotazione in cui stoccare il tuo prodotto.
+                <strong>Cliente: </strong>se desideri solo prenotazione un locale 
+                in cui stoccare il tuo prodotto.
               </ListItemText>
             </ListItem>
             <ListItem disablePadding>
@@ -149,10 +149,14 @@ export const PrimiPassi = () => {
         </AccordionSummary>
         <AccordionDetails>
           <div className="pb-2">
-            Solo dopo aver ricevuto la mail che ti notifica lo sblocco del
-            profilo potrai collegare il tuo profilo ad un account Stripe. La
-            registrazione su Stripe è obbligatoria per poter ricevere le
-            richieste di prenotazione.
+            
+            Solo dopo aver ricevuto l’email di notifica dello sblocco del profilo potrai 
+            collegare il tuo account a Stripe. La registrazione su Stripe è obbligatoria 
+            per ricevere prenotazioni sui tuoi locali. Se la registrazione non viene completata, 
+            potrai comunque procedere con la configurazione dell’Ubicazione e dei locali, 
+            ma questi non saranno visibili agli utenti fino al completamento della 
+            registrazione del tuo account Stripe.
+
           </div>
           <div className="pb-2">
             Per poter collegare il tuo profilo a Stripe, ecco come fare:
@@ -184,8 +188,8 @@ export const PrimiPassi = () => {
             <AlertTitle className="font-bold">
               Perchè devo collegare il mio account su Stripe?
             </AlertTitle>
-            Stripe è il tool utilizzato da Cold Sharing per assicurarti di
-            ricevere il costo della condivisione del tuo locale dai Clienti e
+            Stripe è il tool utilizzato da Cold Sharing per acquistare gli abbonamenti dedicati e 
+            assicurarti di ricevere il costo della condivisione del tuo locale dai Clienti e
             non incorrere ad eventuali insolvenze.
           </Alert>
           <Alert severity="info">
@@ -262,8 +266,7 @@ export const PrimiPassi = () => {
                 <ListItemIcon>a</ListItemIcon>
                 <ListItemText>
                   <strong>Anagrafica</strong>, dovrai inserire un nome che
-                  identifica la tua struttura, l’indirizzo e spuntare la casella
-                  per dichiarare la sede legale.{" "}
+                  identifica la tua struttura e l’indirizzo.{" "}
                 </ListItemText>
               </ListItem>
               <ListItem disablePadding sx={{ pl: 4 }}>
@@ -329,30 +332,10 @@ export const PrimiPassi = () => {
                   immediata, che permettono di prenotare il locale refrigerato
                   direttamente, le richieste di prenotazione prevedono l’invio
                   da parte del potenziale Cliente di una richiesta, che può
-                  essere accettata o rifiutata.
-                  <div className="pb-2">
-                    E’ possibile attivare o meno la funzionalità scegliendo tra
-                    ‘Voglio gestire la Richiesta di prenotazione’ e ‘Non voglio
-                    mai gestire la Richiesta di prenotazione pur acquistando il
-                    pacchetto Standard \ Premium’. Tale funzionalità sarà valida
-                    per tutti i Locali appartenenti all’ Ubicazione e solo se si
-                    acquista un abbonamento Standard o Premium.
-                  </div>
-                  <div className="pb-2">
-                    Nel caso si scegliesse l’opzione ‘Voglio gestire la
-                    Richiesta di prenotazione’ dovrai impostare l’accettazione o
-                    il rifiuto automatico della richiesta di cancellazione se
-                    viene fatta al più di quattro giorni dalla data di check in;
-                    se la richiesta viene fatta in una data di check-in
-                    superiore ai quattro giorni dalla data della ricerca,
-                    riceverai una notifica e da quel momento avrai 48 ore di
-                    tempo per accettarla o rifiutarla. In assenza di un riscontro, 
-                    la richiesta verrà automaticamente accettata o rifiutata in base 
-                    alla preferenza impostata in fase di creazione dell’Ubicazione a 
-                    cui il tuo locale è associato. Anche il Cliente avrà la
-                    possibilità di cancellare la richiesta entro le 48 ore
-                    dall’invio e prima che tu fornisca un riscontro;
-                  </div>
+                  essere accettata o rifiutata. Nella sezione <strong>Prenotazioni </strong>
+                   troverai tutte le informazioni su come attivare la funzionalità,
+                  configurare le preferenze e gestire le richieste inviate dai Clienti.
+
                 </ListItemText>
               </ListItem>
             </List>

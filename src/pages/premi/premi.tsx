@@ -35,7 +35,7 @@ export const Premi = () => {
         I premi Cold Sharing riconoscono l'eccellenza sia nelle strutture che
         offrono locali refrigerati, sia nei fornitori che hanno realizzato tali
         spazi. Pertanto, i premi Cold Sharing si articolano in due categorie:{" "}
-        <strong>Fresh Space Award</strong> e{" "}
+        <strong>Fresh Award</strong> e{" "}
         <strong>Premier Cold Solutions Award</strong>.
       </div>
       <div>
@@ -49,18 +49,18 @@ export const Premi = () => {
             id="panel1-header"
             className="font-bold"
           >
-            Che cosa è il premio Fresh Space Award?
+            Che cosa è il premio Fresh Award?
           </AccordionSummary>
           <AccordionDetails>
             <div className="pb-2">
-              Il <strong>Fresh Space Award</strong> rappresenta il nostro
+              Il <strong>Fresh Award</strong> rappresenta il nostro
               riconoscimento più prestigioso. Questo premio valuta la qualità e
               la quantità delle recensioni e dei punteggi ricevuti dai clienti,
               classificando i locali refrigerati in specifiche categorie e aree
               geografiche.
             </div>
             <div className="pb-2">
-              La selezione dei vincitori del Fresh Space Award si basa su
+              La selezione dei vincitori del Fresh Award si basa su
               criteri rigorosi: la qualità e la quantità delle recensioni e dei
               punteggi pubblicati su Cold Sharing negli ultimi 12 mesi. Per
               essere idonei al premio, i locali refrigerati devono essere

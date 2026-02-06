@@ -92,8 +92,8 @@ export const Fatturazioni = () => {
               <ListItem disablePadding>
                 <ListItemIcon>-</ListItemIcon>
                 <ListItemText>
-                  <strong>Cliente</strong>: utente che desidera solo inviare una
-                  richiesta di prenotazione in cui stoccare il tuo prodotto.
+                  <strong>Cliente</strong>: utente che desidera prenotare un locale
+                   in cui stoccare il tuo prodotto.
                 </ListItemText>
               </ListItem>
               <ListItem disablePadding>
@@ -229,7 +229,7 @@ export const Fatturazioni = () => {
               legale errato o non hai effettuato alcuna indicazione. In tal
               caso, contatta subito il servizio clienti attraverso il seguente{" "}
               <Link
-                to="https://coldsharingticketing.zohodesk.eu/portal/en/newticket"
+                to="https://coldsharing.zohodesk.eu/portal/it/newticket"
                 className="text-blue-500 underline"
               >
                 Link
@@ -645,7 +645,7 @@ export const Fatturazioni = () => {
                 </ListItemText>
               </ListItem>
               <ListItem disablePadding>
-                <ListItemIcon>1</ListItemIcon>
+                <ListItemIcon>2</ListItemIcon>
                 <ListItemText>
                   <strong>Emissione di una nuova fattura</strong>. Dopo aver
                   annullato la fattura errata, ti invieremo una nuova fattura

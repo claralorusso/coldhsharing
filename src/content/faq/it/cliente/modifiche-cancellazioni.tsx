@@ -9,7 +9,7 @@ export const modificheCancellazioniCliente = {
   items: [
     {
       id: "d2",
-      question: "D.2) Posso modificare una prenotazione o una richiesta di prenotazione?",
+      question: "Posso modificare una prenotazione o una richiesta di prenotazione?",
       answer: (
         <>
           Non è possibile modificare una prenotazione o una richiesta inviata. Se
@@ -21,7 +21,7 @@ export const modificheCancellazioniCliente = {
     {
       id: "d3",
       question:
-        "D.3) Quando posso cancellare una prenotazione o una richiesta di prenotazione?",
+        "Quando posso cancellare una prenotazione o una richiesta di prenotazione?",
       answer: (
         <>
           <div className="pb-2">
@@ -38,7 +38,7 @@ export const modificheCancellazioniCliente = {
     },
     {
       id: "d4",
-      question: "D.4) Cosa succede se il Fornitore cancella una prenotazione?",
+      question: "Cosa succede se il Fornitore cancella una prenotazione?",
       answer: (
         <>
           <div className="pb-2">
@@ -56,7 +56,7 @@ export const modificheCancellazioniCliente = {
     {
       id: "d5",
       question:
-        "D.5) Il Fornitore vuole annullare la mia prenotazione. Cosa devo fare?",
+        "Il Fornitore vuole annullare la mia prenotazione. Cosa devo fare?",
       answer: (
         <>
           La prenotazione è un accordo legale tra te e il Fornitore. È responsabilità
@@ -68,7 +68,7 @@ export const modificheCancellazioniCliente = {
     {
       id: "d6",
       question:
-        "D.6) Il pagamento non è andato a buon fine dopo il periodo di cancellazione gratuita. Cosa succede?",
+        "Il pagamento non è andato a buon fine dopo il periodo di cancellazione gratuita. Cosa succede?",
       answer: (
         <>
           Se il pagamento fallisce dopo il termine per la cancellazione gratuita, la
@@ -81,7 +81,7 @@ export const modificheCancellazioniCliente = {
     {
       id: "d1",
       question:
-        "D.1) Come posso sapere se la mia prenotazione o richiesta è stata accettata o cancellata?",
+        "Come posso sapere se la mia prenotazione o richiesta è stata accettata o cancellata?",
       answer: (
         <>
           <div className="pb-2">

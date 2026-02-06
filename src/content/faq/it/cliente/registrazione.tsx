@@ -9,7 +9,7 @@ export const registrazioneCliente = {
     {
       id: "a1",
       question:
-        "A.1) Durante la registrazione mi viene chiesto di scegliere un ruolo commerciale. Cosa significa?",
+        "Durante la registrazione mi viene chiesto di scegliere un ruolo commerciale. Cosa significa?",
       answer: (
         <>
           <div className="pb-2">Al momento della registrazione puoi selezionare uno dei seguenti ruoli commerciali:</div>

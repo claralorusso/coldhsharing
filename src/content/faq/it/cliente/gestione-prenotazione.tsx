@@ -10,7 +10,7 @@ export const gestionePrenotazioneCliente = {
     {
       id: "c1",
       question:
-        "C.1) Qual è la differenza tra modalità di condivisione totale e parziale?",
+        "Qual è la differenza tra modalità di condivisione totale e parziale?",
       answer: (
         <>
           Le modalità di condivisione vengono definite dal Fornitore in fase di configurazione del locale refrigerato e sono:
@@ -31,7 +31,7 @@ export const gestionePrenotazioneCliente = {
     {
       id: "c2",
       question:
-        "C.2) Qual è la differenza tra modalità di stoccaggio a pallet, bins (o cassette), entrambi, a unità?",
+        "Qual è la differenza tra modalità di stoccaggio a pallet, bins (o cassette), entrambi, a unità?",
       answer: (
         <>
           Il Fornitore può specificare, per ciascun locale, la modalità di stoccaggio prevista e le dimensioni richieste. Le opzioni disponibili sono:
@@ -53,7 +53,7 @@ export const gestionePrenotazioneCliente = {
     {
       id: "c3",
       question:
-        "C.3) Differenza tra 'Conferma immediata' e 'Richiesta di prenotazione'",
+        "Differenza tra 'Conferma immediata' e 'Richiesta di prenotazione'",
       answer: (
         <>
           La richiesta di prenotazione è una funzionalità che offre a chi gestisce locali refrigerati il pieno controllo sulle richieste di prenotazione.
@@ -68,7 +68,7 @@ export const gestionePrenotazioneCliente = {
     },
     {
       id: "c4",
-      question: "C.4) Cosa sono i Costi di movimentazione e i Costi di prelievo?",
+      question: "Cosa sono i Costi di movimentazione e i Costi di prelievo?",
       answer: (
         <>
           In fase di prenotazione può capitare di poter selezionare, solo se previsti dal Fornitore, i servizi di:
@@ -91,7 +91,7 @@ export const gestionePrenotazioneCliente = {
     },
     {
       id: "c5",
-      question: "C.5) Come si può richiedere un servizio extra al Fornitore?",
+      question: "Come si può richiedere un servizio extra al Fornitore?",
       answer: (
         <>
           Se vuoi richiedere un servizio extra, come ad esempio un check-in anticipato, l'utilizzo di macchinari presenti in struttura, un numero maggiore di movimentazioni e prelievi, puoi contattare direttamente il Fornitore prima dell'arrivo oppure riportarlo in fase di prenotazione.
@@ -102,7 +102,7 @@ export const gestionePrenotazioneCliente = {
     {
       id: "c6",
       question:
-        "C.6) Come si possono avere più informazioni sui servizi del Fornitore?",
+        "Come si possono avere più informazioni sui servizi del Fornitore?",
       answer: (
         <>
           Ricerca il fornitore attraverso la pagina <strong>"Fornitori"</strong> e contattalo utilizzando la funzione di messaggistica.
@@ -112,7 +112,7 @@ export const gestionePrenotazioneCliente = {
     },
     {
       id: "c7",
-      question: "C.7) All'interno del locale ci sono le scaffalature?",
+      question: "All'interno del locale ci sono le scaffalature?",
       answer: (
         <>
           Tale informazione è consultabile nella card del Locale. Nel caso fossero presenti consulta le <strong>"Informazioni aggiuntive"</strong> per visualizzare l'altezza e il peso massimo supportato.
@@ -122,7 +122,7 @@ export const gestionePrenotazioneCliente = {
     {
       id: "c8",
       question:
-        "C.8) Posso prenotare più locali refrigerati dello stesso fornitore nello stesso momento?",
+        "Posso prenotare più locali refrigerati dello stesso fornitore nello stesso momento?",
       answer: (
         <>
           Sì. Il cliente può selezionare e prenotare più locali refrigerati appartenenti allo stesso fornitore nello stesso momento.

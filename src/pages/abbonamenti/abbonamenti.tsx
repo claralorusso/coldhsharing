@@ -34,36 +34,36 @@ export const Abbonamenti = () => {
     <div className="h-full w-full p-4">
       <h1 className="text-xl font-bold pb-1">Abbonamenti</h1>
       <div className="pb-2">
-        Con gli abbonamenti di Cold Sharing puoi in modo semplice e veloce
-        aumentare la visualizzazione dei tuoi locali e gestire in autonomia il
-        rinnovo automatico. Cold Sharing offre diverse opzioni di abbonamento
-        che permettono di:
+      <p>Gli abbonamenti Cold Sharing ti permettono di aumentare la visibilità 
+      del tuo profilo e dei tuoi locali e di gestire in autonomia le prenotazioni, 
+      con rinnovo automatico semplice e controllabile in ogni momento.</p>
+
+      <p>Cold Sharing offre tre piani di abbonamento – <strong>Basic, Standard e 
+        Premium</strong> – che consentono di:</p>
+
       </div>
       <List>
         <ListItem disablePadding>
           <ListItemIcon>-</ListItemIcon>
           <ListItemText>
-            Offrire maggiore visibilità al tuo profilo ed ai locali che possono
-            apparire in posizioni privilegiate nei risultati di ricerca;
+            migliorare il posizionamento dei locali nei risultati di ricerca;
           </ListItemText>
         </ListItem>
         <ListItem disablePadding>
           <ListItemIcon>-</ListItemIcon>
           <ListItemText>
-            Offrire maggiore visibilità ai locali e possono apparire come
-            ‘suggeriti’ nelle notifiche e-mail inviate ai Clienti;
+            aumentare la visibilità dei locali tramite suggerimenti e notifiche email ai Clienti;
           </ListItemText>
         </ListItem>
         <ListItem disablePadding>
           <ListItemIcon>-</ListItemIcon>
           <ListItemText>
-            Offrire la possibilità di gestire le richieste di prenotazioni che
-            potranno essere da te accettate o rifiutate.
+            gestire le richieste di prenotazione, accettandole o rifiutandole.
           </ListItemText>
         </ListItem>
       </List>
       <div className="pb-2">
-        Il prezzo degli abbonamenti sono visibili nella Homepage della
+        Il <strong>prezzo degli abbonamenti</strong> sono visibili nella Homepage della
         piattaforma.
       </div>
       <div>
@@ -81,20 +81,22 @@ export const Abbonamenti = () => {
           </AccordionSummary>
           <AccordionDetails>
             <div className="pb-2">
-              L'abbonamento Basic ti offre la possibilità di:
+              L’abbonamento Basic è pensato per chi vuole iniziare 
+              a promuovere i propri locali e migliorarne la visibilità.
+              <p>Con il piano Basic puoi:</p>
             </div>
             <List>
               <ListItem disablePadding>
                 <ListItemIcon>-</ListItemIcon>
                 <ListItemText>
-                  Arricchire la galleria delle tue inserzioni con fino a 5
-                  fotografie;
+                  arricchire ogni inserzione con fino a <strong>5 fotografie</strong>;
                 </ListItemText>
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon>-</ListItemIcon>
                 <ListItemText>
-                  Comparire tra i primi risultati di ricerca;
+                  <strong>comparire tra i primi risultati di ricerca</strong>, aumentando le possibilità 
+                  di essere visualizzato dai Clienti.
                 </ListItemText>
               </ListItem>
             </List>
@@ -105,7 +107,7 @@ export const Abbonamenti = () => {
               appena pubblicato.
             </div>
             <div className="pb-2">
-              I requisiti di riposizionamento si basano su:
+              Il posizionamento dipendono principalmente da:
             </div>
             <List>
               <ListItem disablePadding>
@@ -139,17 +141,19 @@ export const Abbonamenti = () => {
           </AccordionSummary>
           <AccordionDetails>
             <div className="pb-2">
-              L'abbonamento Standard ti offre, oltre alle funzionalità dell’
-              abbonamento Basic, la possibilità di:
+             L’abbonamento <strong>Standard</strong> include tutte le funzionalità del piano 
+             Basic e aggiunge strumenti per aumentare il controllo e le opportunità di 
+             prenotazione.
+             <p>Con il piano Standard puoi:</p>
             </div>
             <List>
               <ListItem disablePadding>
                 <ListItemIcon>-</ListItemIcon>
                 <ListItemText>
-                  <strong>Gestire le richieste di prenotazione.</strong>{" "}
-                  <p>
-                    <Link to="/booking/manage-booking">link</Link>
-                  </p>
+                  <strong>Gestire le richieste di prenotazione</strong>, accettando o rifiutando le richieste ricevute{" "}
+                  
+                    <Link to="/booking/manage-booking">(vedi sezione Prenotazioni)</Link>
+                  
                 </ListItemText>
               </ListItem>
               <ListItem disablePadding>
@@ -175,26 +179,26 @@ export const Abbonamenti = () => {
               <ListItem disablePadding>
                 <ListItemIcon>-</ListItemIcon>
                 <ListItemText>
-                  Se una richiesta di prenotazione è stata rifiutata dalla
+                  una richiesta di prenotazione è stata rifiutata da un'altra 
                   struttura.
                 </ListItemText>
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon>-</ListItemIcon>
                 <ListItemText>
-                  Se il cliente cancella una richiesta di prenotazione inviata
+                  il cliente cancella una richiesta di prenotazione inviata
                   ad un'altra struttura.
                 </ListItemText>
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon>-</ListItemIcon>
                 <ListItemText>
-                  Se il cliente annulla una prenotazione prima della scadenza
+                  il cliente annulla una prenotazione entro i termini
                   della cancellazione gratuita.
                 </ListItemText>
               </ListItem>
             </List>
-            <div className="pb-2">I requisiti di ricerca si basano su:</div>
+            <div className="pb-2">I suggerimenti si basano su:</div>
             <List>
               <ListItem disablePadding>
                 <ListItemIcon>-</ListItemIcon>
@@ -214,15 +218,14 @@ export const Abbonamenti = () => {
                 <ListItemIcon>-</ListItemIcon>
                 <ListItemText>
                   <strong>Località</strong>, il tuo locale sarà suggerito entro
-                  un raggio di 100 km;
+                  un raggio di 200 km;
                 </ListItemText>
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon>-</ListItemIcon>
                 <ListItemText>
-                  <strong>Categoria di prodotto</strong>, il tuo locale sarà
-                  proposto solo a clienti interessati a stoccare il tipo di
-                  prodotto per cui è progettato.
+                  <strong>Categoria di prodotto</strong>, in base alla tipologia di 
+                  merce che il locale può ospitare.
                 </ListItemText>
               </ListItem>
             </List>
@@ -242,8 +245,10 @@ export const Abbonamenti = () => {
           </AccordionSummary>
           <AccordionDetails>
             <div className="pb-2">
-              L'abbonamento premium ti offre, oltre alle funzionalità dell’
-              abbonamento Standard, la possibilità di:
+              L’abbonamento Premium è la soluzione più completa e include tutte
+               le funzionalità del piano Standard, offrendo massima visibilità 
+               e supporto dedicato.
+               <p>Con il piano Premium puoi:</p>
             </div>
             <List>
               <ListItem disablePadding>
@@ -260,6 +265,16 @@ export const Abbonamenti = () => {
                   <strong>Mettere in evidenza la tua inserzione</strong>, tutti
                   i tuoi locali saranno contraddistinti dall’etichetta ‘In
                   evidenza’.
+                </ListItemText>
+              </ListItem>
+                <ListItem disablePadding>
+                <ListItemIcon>-</ListItemIcon>
+                <ListItemText>
+                  ricevere <strong>supporto dedicato durante la fase iniziale di 
+                    onboarding.</strong> Entro 72 ore dall’attivazione dell’abbonamento, 
+                    verrai contattato per pianificare una call dedicata, 
+                    finalizzata ad accompagnarti nella configurazione iniziale e 
+                    a sfruttare al meglio le funzionalità della piattaforma.
                 </ListItemText>
               </ListItem>
             </List>

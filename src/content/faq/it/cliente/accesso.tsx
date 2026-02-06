@@ -8,7 +8,7 @@ export const accessoCliente = {
   items: [
     {
       id: "b1",
-      question: "B.1) Ho dimenticato la Mail di registrazione. Cosa devo fare?",
+      question: "Ho dimenticato la Mail di registrazione. Cosa devo fare?",
       answer: (
         <>
           Per recuperare la mail di registrazione clicca su <strong>"Email dimenticata?"</strong> e inserisci la PIVA della tua azienda.
@@ -18,7 +18,7 @@ export const accessoCliente = {
     },
     {
       id: "b2",
-      question: "B.2) Ho dimenticato la Password. Cosa devo fare?",
+      question: "Ho dimenticato la Password. Cosa devo fare?",
       answer: (
         <>
           Per effettuare il reset della password clicca su <strong>"Password dimenticata?"</strong> e inserisci la mail di registrazione.
@@ -28,7 +28,7 @@ export const accessoCliente = {
     },
     {
       id: "b3",
-      question: "B.3) Voglio modificare il ruolo commerciale. Cosa devo fare?",
+      question: "Voglio modificare il ruolo commerciale. Cosa devo fare?",
       answer: (
         <>
           Per poter modificare un ruolo commerciale è necessario aprire un ticket verso l’assistenza che prenderà in carico la tua richiesta.
@@ -39,7 +39,7 @@ export const accessoCliente = {
     {
       id: "b4",
       question:
-        "B.4) Ho inserito le credenziali ma il mio profilo è attivo ma con restrizioni. Cosa devo fare?",
+        "Ho inserito le credenziali ma il mio profilo è attivo ma con restrizioni. Cosa devo fare?",
       answer: (
         <>
           Se dopo l’accesso alla piattaforma compare il messaggio <strong>“Profilo attivo con restrizioni. Serve supporto? Contattaci.”</strong>, significa che:

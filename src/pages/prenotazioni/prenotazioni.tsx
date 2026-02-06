@@ -54,82 +54,209 @@ export const Prenotazioni = () => {
           </AccordionSummary>
           <AccordionDetails>
             <div className="pb-2">
-              La richiesta di prenotazione è una funzionalità che offre a chi
-              gestisce Locali refrigerati il pieno controllo sulle richieste di
-              prenotazione. A differenza delle prenotazioni a conferma
-              immediata, che permettono di prenotare il locale refrigerato
-              direttamente, le richieste di prenotazione prevedono l’invio da
-              parte del potenziale Cliente di una richiesta, che può essere
-              accettata o rifiutata.
+              Cold Sharing permette a chi condivide un locale refrigerato di gestire 
+              le prenotazioni in <strong>due modalità</strong>:
+              <List>
+              <p> - <strong>Conferma immediata</strong>, il Cliente può prenotare il 
+              locale refrigerato direttamente, senza alcuna approvazione preventiva </p>
+              
+              <p> - <strong>Richiesta di prenotazione</strong>, il Cliente invia una richiesta
+               di prenotazione che il fornitore può accettare o rifiutare, 
+               mantenendo il pieno controllo sulle disponibilità. Questa modalità è disponibile 
+               <strong> solo con abbonamento Standard o Premium</strong>.
+              </p>
+              
+              </List>
             </div>
             <div className="pb-2">
-              I Clienti possono vedere i locali che offrono la richiesta di
-              prenotazione in fase di prenotazione solo se hai acquistato un
-              abbonamento Standard o Premium. In fase di configurazione
-              ‘Ubicazione’ nella sezione ‘Gestione richieste di prenotazione’ è
-              possibile attivare o meno la funzionalità scegliendo tra ‘Voglio
-              gestire la Richiesta di prenotazione’ e ‘Non voglio mai gestire la
-              Richiesta di prenotazione pur acquistando il pacchetto Standard \
-              Premium’. Tale funzionalità sarà valida per tutti i Locali
-              appartenenti all’ Ubicazione.
+            <p><strong> Come funziona la conferma immediata? </strong></p>
+            <List>
+             <p>- Il Cliente effettua una prenotazione immediata.</p>
+             <p>- La prenotazione non può essere accettata, rifiutata o annullata dal fornitore.</p>
+             <p>- Se è stata configurata la cancellazione gratuita, solo il Cliente può annullare 
+              la prenotazione entro i tempi previsti.</p>
+            </List>
+            </div>
+
+            <div className="pb-2">
+            <p><strong> Come gestire la richiesta di prenotazione? </strong></p>
+            <p>La richiesta di prenotazione può essere attivata o disattivata in fase di 
+            configurazione dell’Ubicazione, nella sezione Gestione richieste di prenotazione, 
+            scegliendo tra: "Voglio gestire la richiesta di prenotazione" oppure 
+            "Non voglio gestire la richiesta di prenotazione".</p>
+            <p>Se viene selezionata l’opzione Non voglio gestire la richiesta di prenotazione, 
+            anche in presenza di un abbonamento Standard o Premium, la funzionalità non viene attivata.</p>
+            <p>Se viene selezionata l’opzione Voglio gestire la richiesta di prenotazione, è possibile 
+              configurare <strong>l’accettazione o il rifiuto automatico</strong> delle richieste in base ai giorni che 
+              intercorrono tra la data di ricezione della richiesta e la data del check-in. 
+              La configurazione scelta si applica a tutti i locali associati all’Ubicazione.</p>
+            </div>
+
+            <div className="font-bold pb-2">
+              Come impostare la richiesta di prenotazione?
             </div>
             <div className="pb-2">
-              Nel caso si scegliesse l’opzione ‘Voglio gestire la Richiesta di
-              prenotazione’ sarà possibile configurare automaticamente
-              l’accettazione o il rifiuto di tutte le richieste che prevedono
-              una richiesta di condivisione con check-in a più di quattro giorni
-              dall’invio della richiesta.
+              Puoi impostare la richiesta di prenotazione durante la
+              registrazione del locale sulla nostra piattaforma. Ecco come:
             </div>
-            <div className="pb-2">Ecco come funziona:</div>
             <List>
               <ListItem disablePadding>
                 <ListItemIcon>1</ListItemIcon>
-                <ListItemText primary="I Clienti che vogliono prendere in condivisione il tuo locale ti inviano una richiesta di prenotazione. Se la richiesta viene fatta in una data di check-in a più di quattro giorni dalla data della ricerca ti inviano una richiesta di prenotazione." />
+                <ListItemText>
+                  Posizione il cursore sulla foto del tuo Profilo che si trova
+                  alla sinistra del tasto Homepage posizionato nella barra in
+                  alto e clicca su <span className="font-bold">Profilo</span>.
+                </ListItemText>
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon>2</ListItemIcon>
-                <ListItemText primary="Ricevi una notifica della richiesta di prenotazione ed automaticamente verrà accettata o rifiutata a seconda della configurazione scelta." />
+                <ListItemText>
+                  Scorri verso il basso fino a raggiungere la sezione
+                  Ubicazione. Se non hai ancora creato l’ubicazione clicca sull’
+                  icona{" "}
+                  <span>
+                    <AddIcon />
+                  </span>{" "}
+                  (Aggiungi Ubicazione) oppure entra in modifica cliccando
+                  sull’icona{" "}
+                  <span>
+                    <SettingsIcon />
+                  </span>{" "}
+                  (Modifica).
+                </ListItemText>
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon>3</ListItemIcon>
-                <ListItemText primary="Se accetti, la richiesta di prenotazione diventa a tutti gli effetti una prenotazione. Nel caso in cui, per il locale prenotato, fosse stata impostata la cancellazione gratuita il Cliente fino allo scadere della stessa potrà in autonomia cancellarla; qualora non fosse presente l’opzione della cancellazione gratuita la prenotazione sarà confermata da entrambe le parti. Se la richiesta viene fatta in una data di check-in superiore ai quattro giorni dalla data della ricerca ti inviano una richiesta di prenotazione." />
+                <ListItemText>
+                  Vai, cliccando sul Tasto 'Avanti', nella sezione{" "}
+                  <span className="font-bold">
+                    Gestione richiesta di prenotazione
+                  </span>{" "}
+                  dove avrai la possibilità di selezionare:
+                </ListItemText>
               </ListItem>
+              <List>
+                <ListItem disablePadding sx={{ pl: 4 }}>
+                  <ListItemIcon>a</ListItemIcon>
+                  <ListItemText>
+                    <span className="font-bold">
+                      Non voglio mai gestire la Richiesta di prenotazione pur
+                      acquistando il pacchetto Standard \ Premium
+                    </span>
+                    , selezionando tale opzione non avrai la possibilità di
+                    accettare o rifiutare una richiesta di prenotazione. Le
+                    richieste che ti invierà il Cliente saranno automaticamente
+                    sempre accettate;
+                  </ListItemText>
+                </ListItem>
+                <ListItem disablePadding sx={{ pl: 4 }}>
+                  <ListItemIcon>b</ListItemIcon>
+                  <ListItemText>
+                    <span className="font-bold">
+                      Voglio Gestire la richiesta di prenotazione
+                    </span>
+                    , selezionando tale opzione dovrai impostare l’accettazione
+                    o il rifiuto automatico della richiesta di cancellazione se
+                    viene fatta al più di quattro giorni dalla data di check in;
+                    se la richiesta viene fatta in una data di check-in
+                    superiore ai quattro giorni dalla data della ricerca,
+                    riceverai una notifica e da quel momento avrai 48 ore di
+                    tempo per accettarla o rifiutarla. In assenza di un riscontro, 
+                    la richiesta verrà automaticamente accettata o rifiutata in base alla 
+                    preferenza impostata in fase di creazione dell’Ubicazione a cui il tuo 
+                    locale è associato. Anche il Cliente avrà la
+                    possibilità di cancellare la richiesta entro le 48 ore
+                    dall’invio e prima che tu fornisca un riscontro;
+                  </ListItemText>
+                </ListItem>
+              </List>
               <ListItem disablePadding>
                 <ListItemIcon>4</ListItemIcon>
-                <ListItemText primary="Ricevi una notifica della richiesta di prenotazione ed avrai 48 ore di tempo per accettarla/rifiutarla. In assenza di un riscontro, la richiesta verrà automaticamente accettata o rifiutata in base alla preferenza impostata in fase di creazione dell’Ubicazione a cui il tuo locale è associato; anche il Cliente entro le prossime 48 ore dall’invio della richiesta avrà la possibilità di rifiutarla. " />
-              </ListItem>
-              <ListItem disablePadding>
-                <ListItemIcon>5</ListItemIcon>
-                <ListItemText primary="Se accetti, la richiesta di prenotazione diventa a tutti gli effetti una prenotazione. Nel caso in cui, per il locale prenotato, fosse stata impostata la cancellazione gratuita il Cliente fino allo scadere della stessa potrà in autonomia cancellarla; qualora non fosse presente l’opzione della cancellazione gratuita la prenotazione sarà confermata da entrambe le parti. " />
+                <ListItemText>
+                  Clicca sul tasto <span className="font-bold">Salva</span> per
+                  terminare la configurazione dell’Ubicazione.
+                </ListItemText>
               </ListItem>
             </List>
             <div className="pb-2">
-              Nel caso si scegliesse l’opzione ‘Non voglio mai gestire la
-              Richiesta di prenotazione pur acquistando il pacchetto Standard \
-              Premium’ non verrà attivata tale funzionalità.
+              La Gestione della richiesta di prenotazione sarà comune su tutti i
+              Locali che andrai ad associare sull’ Ubicazione. Non è possibile
+              pertanto gestire una differente modalità di gestione su locali
+              appartenenti alla stessa Ubicazione. Potrai iniziare a ricevere
+              richieste di prenotazione dopo aver configurato almeno un Locale
+              ed acquistato un abbonamento Standard o Premium.
             </div>
+
+            <div className="pb-2">
+            <p><strong> Come funziona la richiesta di prenotazione? </strong></p>
+            <p>I Clienti che desiderano prendere in condivisione il tuo locale inviano una richiesta di prenotazione. 
+              Il sistema verifica il numero di giorni che intercorrono tra la data di invio della richiesta e 
+              la data di inizio della condivisione.</p>
+            </div>
+
+            <div className="pb-2">
+              Se il numero di giorni è pari o inferiore a 3:
             <List>
-              <ListItem disablePadding>
-                <ListItemIcon>1</ListItemIcon>
-                <ListItemText primary="I Clienti che vogliono prendere in condivisione il tuo locale ti inviano una prenotazione immediata della prenotazione." />
-              </ListItem>
-              <ListItem disablePadding>
-                <ListItemIcon>2</ListItemIcon>
-                <ListItemText primary="Non sarà possibile accettare/rifiutare/annullare la prenotazione da ambo le parti. Nel caso fosse stata configurata la cancellazione gratuita solo il Cliente potrà annullare la prenotazione entro i tempi definiti." />
-              </ListItem>
+             <p>- Ricevi una notifica della richiesta.</p>
+             <p>- La richiesta viene accettata o rifiutata automaticamente in base alla configurazione impostata.</p>
+             <p>- In caso di accettazione, la richiesta diventa a tutti gli effetti una prenotazione. Solo 
+              Se è attiva la cancellazione gratuita, il Cliente può annullare la prenotazione entro i termini previsti.</p>
             </List>
-            <div className="pb-2">
-              La richiesta di prenotazione necessita quindi di più tempo di
-              gestione rispetto alla prenotazione a conferma immediata e può
-              comportare un minor numero di prenotazioni e potenzialmente minori
-              entrate. Per comodità, è possibile passare da un’opzione all'altra
-              a seconda delle esigenze della tua attività.
             </div>
+
+            <div className="pb-2">
+            Se il numero di giorni è uguale o superiore a 4
+            <List>
+             <p>- Ricevi una notifica della richiesta.</p>
+             <p>- Hai <strong>48 ore</strong> di tempo per accettarla o rifiutarla.</p>
+             <p>- In assenza di risposta, la richiesta viene automaticamente accettata 
+              o rifiutata in base alla preferenza impostata in fase di creazione dell’Ubicazione.</p>
+             <p>- Se accettata, la richiesta diventa una prenotazione confermata, con le stesse 
+              regole di cancellazione sopra indicate.</p>
+             <p>- Nota: Anche il Cliente ha <strong>48 ore</strong> di tempo dall’invio per rifiutare la richiesta.</p>
+            </List>
+            </div>
+
             <div className="font-bold pb-2">
-              Come funzionano i prezzi e i pagamenti
+              Come accettare o rifiutare la richiesta di prenotazione?
             </div>
             <div className="pb-2">
-              Quando ricevi una richiesta di prenotazione, potrai consultare la
+              Puoi scegliere di accettare o rifiutare le richieste di
+              prenotazione accedendo alla piattaforma o tramite notifica e-mail.{" "}
+            </div>
+            <div className="pb-2">
+              Ecco come accettare o rifiutare le richieste di prenotazione
+              accedendo alla piattaforma:
+            </div>
+            <div className="pb-2">
+              Vai alla voce ‘Prenotazioni’ che trovi nella barra in alto e
+              clicca su ‘Richieste di prenotazioni’. Individua la richiesta di
+              interesse e scegli la tua preferenza.
+            </div>
+            <div className="pb-2">
+              Ecco come accettare la richiesta di prenotazione tramite notifica
+              e-mail:
+            </div>
+            <div className="pb-2">
+              Entra nella mail ricevuta e clicca sul pulsante ‘Conferma
+              prenotazione’. Qualora non fossi già loggato sarà necessario
+              accedere prima alla piattaforma.
+            </div>
+            <div className="pb-2">
+              Rifiutare molte richieste può avere un impatto negativo
+              sull’opinione che i Clienti avranno dei tuoi Locali. Tieni presente 
+              che, se non rispondi a una richiesta di prenotazione entro le prossime
+               48 ore, la richiesta verrà automaticamente accettata o rifiutata 
+               in base alla preferenza impostata in fase di creazione dell’Ubicazione 
+               a cui il tuo locale è associato.
+            </div>
+
+            <div className="font-bold pb-2">
+              Come funzionano i prezzi e i pagamenti su una prenotazione?
+            </div>
+            <div className="pb-2">
+              Quando ricevi una  prenotazione, indipendentemente dalla modalità gestione scelta, 
+              potrai consultare la
               stessa nella sezione <strong>Richieste di prenotazione</strong> se
               la condivisione non è iniziata o in{" "}
               <strong>Storico prenotazioni </strong>se la condivisione è
@@ -231,133 +358,7 @@ export const Prenotazioni = () => {
               anagrafica locale. Eventuali modifiche all’anagrafica del locale
               saranno valide solo per le nuove richieste che riceverai.
             </div>
-            <div className="font-bold pb-2">
-              Come impostare la richiesta di prenotazione
-            </div>
-            <div className="pb-2">
-              Puoi impostare la richiesta di prenotazione durante la
-              registrazione del locale sulla nostra piattaforma. Ecco come:
-            </div>
-            <List>
-              <ListItem disablePadding>
-                <ListItemIcon>1</ListItemIcon>
-                <ListItemText>
-                  Posizione il cursore sulla foto del tuo Profilo che si trova
-                  alla sinistra del tasto Homepage posizionato nella barra in
-                  alto e clicca su <span className="font-bold">Profilo</span>.
-                </ListItemText>
-              </ListItem>
-              <ListItem disablePadding>
-                <ListItemIcon>2</ListItemIcon>
-                <ListItemText>
-                  Scorri verso il basso fino a raggiungere la sezione
-                  Ubicazione. Se non hai ancora creato l’ubicazione clicca sull’
-                  icona{" "}
-                  <span>
-                    <AddIcon />
-                  </span>{" "}
-                  (Aggiungi Ubicazione) oppure entra in modifica cliccando
-                  sull’icona{" "}
-                  <span>
-                    <SettingsIcon />
-                  </span>{" "}
-                  (Modifica).
-                </ListItemText>
-              </ListItem>
-              <ListItem disablePadding>
-                <ListItemIcon>3</ListItemIcon>
-                <ListItemText>
-                  Vai, cliccando sul Tasto 'Avanti', nella sezione{" "}
-                  <span className="font-bold">
-                    Gestione richiesta di prenotazione
-                  </span>{" "}
-                  dove avrai la possibilità di selezionare:
-                </ListItemText>
-              </ListItem>
-              <List>
-                <ListItem disablePadding sx={{ pl: 4 }}>
-                  <ListItemIcon>a</ListItemIcon>
-                  <ListItemText>
-                    <span className="font-bold">
-                      Non voglio mai gestire la Richiesta di prenotazione pur
-                      acquistando il pacchetto Standard \ Premium
-                    </span>
-                    , selezionando tale opzione non avrai la possibilità di
-                    accettare o rifiutare una richiesta di prenotazione. Le
-                    richieste che ti invierà il Cliente saranno automaticamente
-                    sempre accettate;
-                  </ListItemText>
-                </ListItem>
-                <ListItem disablePadding sx={{ pl: 4 }}>
-                  <ListItemIcon>b</ListItemIcon>
-                  <ListItemText>
-                    <span className="font-bold">
-                      Voglio Gestire la richiesta di prenotazione
-                    </span>
-                    , selezionando tale opzione dovrai impostare l’accettazione
-                    o il rifiuto automatico della richiesta di cancellazione se
-                    viene fatta al più di quattro giorni dalla data di check in;
-                    se la richiesta viene fatta in una data di check-in
-                    superiore ai quattro giorni dalla data della ricerca,
-                    riceverai una notifica e da quel momento avrai 48 ore di
-                    tempo per accettarla o rifiutarla. In assenza di un riscontro, 
-                    la richiesta verrà automaticamente accettata o rifiutata in base alla 
-                    preferenza impostata in fase di creazione dell’Ubicazione a cui il tuo 
-                    locale è associato. Anche il Cliente avrà la
-                    possibilità di cancellare la richiesta entro le 48 ore
-                    dall’invio e prima che tu fornisca un riscontro;
-                  </ListItemText>
-                </ListItem>
-              </List>
-              <ListItem disablePadding>
-                <ListItemIcon>4</ListItemIcon>
-                <ListItemText>
-                  Clicca sul tasto <span className="font-bold">Salva</span> per
-                  terminare la configurazione dell’Ubicazione.
-                </ListItemText>
-              </ListItem>
-            </List>
-            <div className="pb-2">
-              La Gestione della richiesta di prenotazione sarà comune su tutti i
-              Locali che andrai ad associare sull’ Ubicazione. Non è possibile
-              pertanto gestire una differente modalità di gestione su locali
-              appartenenti alla stessa Ubicazione. Potrai iniziare a ricevere
-              richieste di prenotazione dopo aver configurato almeno un Locale
-              ed acquistato un abbonamento Standard o Premium.
-            </div>
-            <div className="font-bold pb-2">
-              Come gestire la richiesta di prenotazione
-            </div>
-            <div className="pb-2">
-              Puoi scegliere di accettare o rifiutare le richieste di
-              prenotazione accedendo alla piattaforma o tramite notifica e-mail.{" "}
-            </div>
-            <div className="pb-2">
-              Ecco come accettare o rifiutare le richieste di prenotazione
-              accedendo alla piattaforma:
-            </div>
-            <div className="pb-2">
-              Vai alla voce ‘Prenotazioni’ che trovi nella barra in alto e
-              clicca su ‘Richieste di prenotazioni’. Individua la richiesta di
-              interesse e scegli la tua preferenza.
-            </div>
-            <div className="pb-2">
-              Ecco come accettare la richiesta di prenotazione tramite notifica
-              e-mail:
-            </div>
-            <div className="pb-2">
-              Entra nella mail ricevuta e clicca sul pulsante ‘Conferma
-              prenotazione’. Qualora non fossi già loggato sarà necessario
-              accedere prima alla piattaforma.
-            </div>
-            <div className="pb-2">
-              Rifiutare molte richieste può avere un impatto negativo
-              sull’opinione che i Clienti avranno dei tuoi Locali. Tieni presente 
-              che, se non rispondi a una richiesta di prenotazione entro le prossime
-               48 ore, la richiesta verrà automaticamente accettata o rifiutata 
-               in base alla preferenza impostata in fase di creazione dell’Ubicazione 
-               a cui il tuo locale è associato.
-            </div>
+          
             <div className="pb-2 font-bold"> Domande frequenti</div>
             <Alert severity="info">
               <AlertTitle className="font-bold">
