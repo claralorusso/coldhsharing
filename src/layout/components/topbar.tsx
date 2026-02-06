@@ -34,16 +34,16 @@ export const Topbar = () => {
         {/* Logo + titolo */}
         <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, flexGrow: 1 }}>
           {/* Immagine logo */}
-          <Box
-            component="img"
-            src="/logotrasp.png"
-            alt="Coldsharing"
-            sx={{
-              height: 150,
-              width: "auto",
-              borderRadius: 1,
-            }}
-          />
+            <Box
+              component="img"
+              src="/logotrasp.png"
+              alt="Coldsharing"
+              sx={{
+                height: { xs: 48, sm: 80, md: 120 },
+                width: "auto",
+                borderRadius: 1,
+              }}
+            />
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <Typography variant="subtitle1" sx={{ fontWeight: 700, lineHeight: 1.2 }}>
               {t("topbar.title")}
