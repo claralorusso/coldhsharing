@@ -79,24 +79,29 @@ export const Topbar = () => {
           }}
           size="small"
           sx={{
-            mr: 2,
-            backgroundColor: "#f1f5f9", // slate-100
+          mr: { xs: 0, sm: 2 },
+          mt: { xs: 1, sm: 0 },
+          alignSelf: { xs: "stretch", sm: "auto" },
+          justifyContent: { xs: "center", sm: "flex-start" },
+          backgroundColor: "#f1f5f9",
+          borderRadius: "999px",
+          padding: "4px",
+          "& .MuiToggleButton-root": {
+            border: 0,
+            textTransform: "none",
             borderRadius: "999px",
-            padding: "4px",
-            "& .MuiToggleButton-root": {
-              border: 0,
-              textTransform: "none",
-              borderRadius: "999px",
-              fontWeight: 700,
-              px: 2,
-              py: 0.75,
-            },
-            "& .Mui-selected": {
-              backgroundColor: "#0f172a", // slate-900
-              color: "#ffffff",
-              "&:hover": { backgroundColor: "#0f172a" },
-            },
-          }}
+            fontWeight: 700,
+            px: 2,
+            py: 0.75,
+            flex: { xs: 1, sm: "unset" },
+          },
+          "& .Mui-selected": {
+            backgroundColor: "#0f172a",
+            color: "#ffffff",
+            "&:hover": { backgroundColor: "#0f172a" },
+          },
+        }}
+
         >
           <ToggleButton value="cliente">{t("topbar.area.cliente")}</ToggleButton>
           <ToggleButton value="fornitore">{t("topbar.area.fornitore")}</ToggleButton>
@@ -113,8 +118,11 @@ export const Topbar = () => {
           backgroundColor: "#22c55e",
           "&:hover": { backgroundColor: "#16a34a" },
           boxShadow: "0 4px 10px rgba(34,197,94,0.25)",
-          fontSize: 14,
-          px: 2.5,
+          fontSize: { xs: 13, sm: 14 },
+          px: { xs: 2, sm: 2.5 },
+          mt: { xs: 1, sm: 0 },
+          alignSelf: { xs: "stretch", sm: "auto" },
+          whiteSpace: "nowrap",
         }}
       >
         {t("topbar.cta")}
